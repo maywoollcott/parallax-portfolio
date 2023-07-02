@@ -1,38 +1,32 @@
-.App {
+import COLORS from .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heroSection {
+  background-color: var(--offWhite);
+  height: 90vh;
+}
+.secondHeroSection {
+  background-color: var(--pink);
+  height: 90vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* first hero section */
+.nameContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+}
+.pinkHeaderText {
+  color: var(--pink);
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blueHeaderText {
+  color: var(--blue);
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 10px;
 }
